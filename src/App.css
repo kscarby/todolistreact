@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+body {
+  font-family: 'Courgette', cursive;
+  background-color: #f4f4f4;
+  padding: 30px;
+  color: #333;
+  background-image: url('./img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.app {
+  max-width: 600px ;
+  margin: auto;
+  background-color: #abdee6d7;
+  padding: 20px 30px;
+  border-radius: 15px;
+
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+    /* Primeiro passo: definir um degradê como fundo */
+    background-image: linear-gradient(to bottom, #f805d8bd, #c952af, #f8f842);
+  
+    /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    background-clip: text;
+    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+  
+    /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+    -webkit-text-fill-color: transparent;
+  
+    /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+    color: black;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+p {
+  font-size: large;
+  margin: 10px 0;
+  text-decoration: none;
+}
+input {
+  box-sizing: border-box;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #f3b0c3;
+  border-style: none;
+  border-radius: 35px;
+}
+
+.todo {
+  margin-top: 15px;
+  padding: 5px 15px;
+  background-color: #fff;
+  border-radius: 35px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  
+}
+.complete {
+  background-color: #b6cfb6;
+}
+
+.delete {
+  background-color: #f3b0c3;
+}
+
+
+input, select {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 35px;
+  width: 100%;
+}
+
+.complete:hover {
+  cursor: pointer;
+  background-color: #7cd37c;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: #f185a3;
+
+}
+
+.delete:hover {
+  cursor: pointer;
+  background-color: #f185a3;
+}
+
+
+
+
